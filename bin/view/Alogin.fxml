@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Alogin">
+	<children>
+		<Pane layoutX="-131.0" layoutY="-107.0" prefHeight="360.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Button fx:id="cancle" layoutX="217.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleCancel" text="取消" />
+				<Button fx:id="ok" layoutX="102.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleOk" text="确定" />
+				<Label fx:id="memberLabel" alignment="CENTER" layoutX="85.0" layoutY="274.0" prefHeight="30.0" prefWidth="200.0" text="无" />
+				<Button layoutX="308.0" layoutY="277.0" mnemonicParsing="false" onAction="#searchEditAM" text="修改" />
+				<Label alignment="CENTER" layoutX="142.0" layoutY="220.0" prefHeight="50.0" prefWidth="85.0" text="客户">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+            <Label alignment="CENTER" layoutX="175.0" layoutY="132.0" prefHeight="56.0" prefWidth="85.0" text="结束">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="endField" layoutX="283.0" layoutY="147.0" prefHeight="26.0" prefWidth="65.0" />
+			</children>
+		</Pane>
+		<Label alignment="CENTER" layoutY="10.0" prefHeight="51.0" prefWidth="369.0" text="场馆信息">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="43.0" prefHeight="56.0" prefWidth="85.0" text="位置">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="87.0" prefHeight="56.0" prefWidth="85.0" text="名称">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="135.0" prefHeight="56.0" prefWidth="85.0" text="开始">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="175.0" prefHeight="56.0" prefWidth="85.0" text="大小">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="idField" layoutX="95.0" layoutY="58.0" prefHeight="26.0" prefWidth="250.0" text="X-0-0000" />
+		<TextField fx:id="nameField" layoutX="95.0" layoutY="102.0" prefHeight="25.0" prefWidth="250.0" />
+		<TextField fx:id="beginField" layoutX="95.0" layoutY="149.0" prefHeight="26.0" prefWidth="65.0" />
+		<TextField fx:id="sizeField" layoutX="95.0" layoutY="190.0" prefHeight="25.0" prefWidth="250.0" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Hlogin">
+	<children>
+		<Pane layoutX="-131.0" layoutY="-107.0" prefHeight="270.0" prefWidth="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Button fx:id="cancle" layoutX="217.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleCancel" text="取消" />
+				<Button fx:id="ok" layoutX="102.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleOk" text="确定" />
+				<Label fx:id="memberLabel" alignment="CENTER" layoutX="85.0" layoutY="189.0" prefHeight="30.0" prefWidth="200.0" text="无" />
+				<Button layoutX="308.0" layoutY="193.0" mnemonicParsing="false" onAction="#searchEditHM" text="修改" />
+				<Label alignment="CENTER" layoutX="143.0" layoutY="139.0" prefHeight="50.0" prefWidth="85.0" text="住户">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+		<Label alignment="CENTER" layoutY="10.0" prefHeight="51.0" prefWidth="369.0" text="房屋信息">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="43.0" prefHeight="56.0" prefWidth="85.0" text="位置">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="10.0" layoutY="87.0" prefHeight="56.0" prefWidth="85.0" text="备注">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="idField" layoutX="95.0" layoutY="58.0" prefHeight="26.0" prefWidth="250.0" text="X-0-0000" />
+		<TextField fx:id="remarkField" layoutX="95.0" layoutY="102.0" prefHeight="25.0" prefWidth="250.0" />
+	</children>
+</AnchorPane>

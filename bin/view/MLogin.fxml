@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MLogin">
+	<children>
+		<Pane layoutX="-131.0" layoutY="-107.0" prefHeight="360.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<TabPane prefHeight="307.0" prefWidth="360.0" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab text="必填">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="360.0">
+									<children>
+										<Label alignment="CENTER" layoutX="-1.0" prefHeight="51.0" prefWidth="360.0" text="个人信息">
+											<font>
+												<Font size="28.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="33.0" prefHeight="56.0" prefWidth="85.0" text="姓名">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="77.0" prefHeight="56.0" prefWidth="85.0" text="电话">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="124.0" prefHeight="56.0" prefWidth="85.0" text="年龄">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="165.0" prefHeight="56.0" prefWidth="85.0" text="身份证号">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<TextField fx:id="nameField" layoutX="85.0" layoutY="48.0" prefHeight="26.0" prefWidth="250.0" />
+										<TextField fx:id="phoneField" layoutX="85.0" layoutY="92.0" prefHeight="25.0" prefWidth="250.0" />
+										<TextField fx:id="ageField" layoutX="85.0" layoutY="139.0" prefHeight="25.0" prefWidth="250.0" />
+										<TextField fx:id="idCardField" layoutX="85.0" layoutY="180.0" prefHeight="25.0" prefWidth="250.0" />
+										<Label alignment="CENTER" layoutY="206.0" prefHeight="56.0" prefWidth="85.0" text="密码">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<TextField fx:id="passwordField" layoutX="85.0" layoutY="221.0" prefHeight="25.0" prefWidth="250.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="选填">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="360.0">
+									<children>
+										<Label alignment="CENTER" layoutX="-1.0" prefHeight="51.0" prefWidth="360.0" text="个人信息">
+											<font>
+												<Font size="28.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="46.0" prefHeight="56.0" prefWidth="85.0" text="姓名">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="102.80000305175781" prefHeight="56.0" prefWidth="85.0" text="电话">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="158.8000030517578" prefHeight="56.0" prefWidth="85.0" text="年龄">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="215.60000610351562" prefHeight="56.0" prefWidth="85.0" text="身份证号">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<TextField layoutX="85.5999984741211" layoutY="62.79999923706055" />
+										<TextField layoutX="85.5999984741211" layoutY="61.20000076293945" prefHeight="25.0" prefWidth="270.0" />
+										<TextField layoutX="85.5999984741211" layoutY="118.0" prefHeight="25.0" prefWidth="270.0" />
+										<TextField layoutX="85.5999984741211" layoutY="174.0" prefHeight="25.0" prefWidth="270.0" />
+										<TextField layoutX="85.5999984741211" layoutY="230.8000030517578" prefHeight="25.0" prefWidth="270.0" />
+									</children>
+								</AnchorPane>
+							</content>
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="360.0">
+									<children>
+										<Label alignment="CENTER" layoutY="50.0" prefHeight="50.0" prefWidth="85.0" text="类型">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="114.0" prefHeight="50.0" prefWidth="85.0" text="家属">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="164.0" prefHeight="50.0" prefWidth="85.0" text="服务人员">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutY="213.0" prefHeight="50.0" prefWidth="85.0" text="房屋">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<TextField fx:id="typeField" layoutX="85.0" layoutY="62.0" prefHeight="25.0" prefWidth="250.0" />
+										<Label alignment="CENTER" layoutY="13.0" prefHeight="50.0" prefWidth="85.0" text="备注">
+											<font>
+												<Font size="18.0" />
+											</font>
+										</Label>
+										<TextField fx:id="remarkField" layoutX="85.0" layoutY="25.0" prefHeight="25.0" prefWidth="250.0" />
+										<Label fx:id="kinsfolkLabel" layoutX="85.0" layoutY="126.0" prefHeight="25.0" prefWidth="200.0" text="无" />
+										<Label fx:id="houseLabel" layoutX="86.0" layoutY="225.0" prefHeight="25.0" prefWidth="200.0" text="无" />
+										<Label fx:id="staffLabel" layoutX="86.0" layoutY="176.0" prefHeight="25.0" prefWidth="200.0" text="无" />
+										<Button fx:id="kinsfolkButton" layoutX="291.0" layoutY="128.0" mnemonicParsing="false" onAction="#searchEditMM" text="修改" />
+										<Button fx:id="staffButton" layoutX="291.0" layoutY="178.0" mnemonicParsing="false" onAction="#searchEditMS" text="修改" />
+										<Button fx:id="houseButton" layoutX="291.0" layoutY="227.0" mnemonicParsing="false" onAction="#searchEditMH" text="修改" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+					</tabs>
+				</TabPane>
+				<Button fx:id="okClick" layoutX="98.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleOk" text="确定" />
+				<Button fx:id="cancelClick" layoutX="210.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleCancel" text="取消" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

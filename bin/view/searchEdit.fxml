@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchEdit">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="420.0">
+         <children>
+            <Button fx:id="search" layoutX="332.0" layoutY="127.0" mnemonicParsing="false" onAction="#searchObj" text="搜索" />
+            <ComboBox fx:id="choiceObj" layoutX="14.0" layoutY="127.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="23.0" prefWidth="99.0" promptText="搜索对象" visibleRowCount="3" />
+            <TextField fx:id="getSearchObj" layoutX="130.0" layoutY="127.0" />
+            <Button fx:id="addButton" layoutX="139.0" layoutY="216.0" mnemonicParsing="false" onAction="#addObj" text="添加" />
+            <Button fx:id="removeButton" layoutX="241.0" layoutY="216.0" mnemonicParsing="false" onAction="#removeObj" text="删除" />
+            <Label fx:id="stateSearch" alignment="CENTER" layoutX="125.0" layoutY="40.0" prefHeight="60.0" prefWidth="171.0" text="搜索状态">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
